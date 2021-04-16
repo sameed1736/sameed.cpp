@@ -1,0 +1,197 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (;;)
+	{
+		/these are the variables for use later/
+		int Health = 100, Damage = 100;
+ 
+		cout << "\n\n \t Welcome to this Adventure Game, this is the world of coventry, what is your name? \n \n " << endl;
+		string YourName;
+		cin >> YourName;
+ 
+		cout << " Are you sure that your name is: " << endl;
+		cout << YourName << "? " << "Type Yes or No" << endl;
+		string NameTrue;
+		cin >> NameTrue;
+ 
+		if (NameTrue == "No")
+			continue;
+ 
+		cout << " Allright then " << YourName << " Let's Begin your adventure! " << endl;
+ 
+		cin.get();
+		cin.get();
+ 
+		cout << " This is the world of Coventry " << YourName << " This is the most emerging part of the universe, \nand now you are the memer of our world." << endl;
+                cin.get();
+                cout << " Well before i continue, what is your age: " << endl;
+	        int AgeNumber = 0;
+	        cin >> AgeNumber;
+	        cin.get();
+
+		cout << " Let me continue, i am Sameed, and i am the developer of this game. \n Now You are inside a building and your task is to remove people\n from this building.\n Because there is an emergency situation due fire and you also heared the fire alaram..." << endl;
+		cout << " Your objective is bring people out from this building as many other young peeps are doing, \nbut if you wont, you will loose your health...\n" << endl; 
+		cin.get();
+		cout << " You have 100 health, if you loose everything, you have lost the game." << endl;
+		cout << " Good Luck " << YourName << endl;
+		cout << " Now " << YourName << " You will get some questions: " << endl;
+		//questions and functions
+		string Answer = "ok";
+		cin.get();
+		string Response;
+		cout << " Question 1. You have to arrange a portable stair you have to go to the\n ground floor and pick the stair..\n(ok or no)\n" << endl;
+		cin >> Response;
+		if (Response == Answer)
+			cout << " Great, you are brave! Let's Continue! " << endl;
+		else
+		{
+			cout << " You dumb person! You are wrong, you lost died health" << endl;
+			cout << " Health(100) " << " - " << " Damage(100) " << " = " << Health - Damage << endl;
+			string Die = "yes";
+			string DieAnswer;
+			cout << " Want to restart the game? " << endl;
+			cin >> DieAnswer;
+			if (DieAnswer == Die)
+				continue;
+		
+			else
+			{
+				cout << " whatever..., goodbye !" << endl;
+				break;
+			}	
+		}	
+		string Answer1 = "call";
+		cin.get();
+		string Response1;
+		cout << "  2. Call Fire Bergade for help. Or bring people out of the building alone \n(call or no?)" << endl;
+		cin >> Response1;
+		if (Response1 == Answer1)
+			cout << " They are coming in a while! Continue your work " << endl;
+		else
+		{
+			cout << " You lost your health! Continue" << endl;
+			cout << " Health(100) " << " - " << " Damage(100) " << " = " << Health - Damage << endl;
+			string Die = "yes";
+			string DieAnswer;
+			cout << " Want to restart the game? " << endl;
+			cin >> DieAnswer;
+			if (DieAnswer == Die)
+				continue;
+ 
+			else
+			{
+				cout << " whatever , goodbye !" << endl;
+				break;
+			}
+		}
+		string Answer2 = "yes";
+		cin.get();
+		string Response2;
+		cout << " 3. Open all the emergency doors \n (ok, no?) " << endl;
+		cin >> Response2;
+		if (Response2 == Answer2)
+			cout << " Great, you are brave! Let's Continue!  " << endl;
+		else
+		{
+			cout << " You dumb person! You are wrong, you lost died health" << endl;
+			cout << " Health(100) " << " - " << " Damage(100) " << " = " << Health - Damage << endl;
+			string Die = "yes";
+			string DieAnswer;
+			cout << " Want to restart the game? " << endl;
+			cin >> DieAnswer;
+			if (DieAnswer == Die)
+				continue;
+			else
+			{
+				cout << " whatever , goodbye !" << endl;
+				break;
+			}
+		}
+			string Answer3 = "ok";
+			cin.get();
+			string Response3;
+			cout << " 4. Now Use Water by climbing up the third portion of the building..\n (ok, no?) " << endl;
+			cin >> Response3;
+			if (Response3 == Answer3)
+				cout << " Great, you are brave! Let's Continue!  " << endl;
+			
+			
+			else
+			{
+				cout << " You dumb person! You are wrong, you died ! " << endl;
+				cout << " Health(100) " << " - " << " Damage(100) " << " = " << Health - Damage << endl;
+				string Die = "yes";
+				string DieAnswer;
+				cout << " Want to restart the game? " << endl;
+				cin >> DieAnswer;
+				if (DieAnswer == Die)
+					continue;
+ 
+				else
+				{
+					cout << "whatever, goodbye !" << endl;
+					break;
+				}
+			}	
+				string Answer4 = "ok";
+				cin.get();
+				string Response4;
+				cout << " 5. Put injured people into the ambulance (ok, no?) " << endl;
+				cin.get();
+				cin.get();
+				cout << " Great, you are brave!" << endl;
+				cin >> Response4;
+				if (Response4 == Answer4)
+					cout << " Congratulations, you  won the game! " << endl;
+				
+				else
+				{
+					cout << " You dumb person! You are wrong, you lost died health" << endl;
+					cout << " Health(100) " << " - " << " Damage(100) " << " = " << Health - Damage << endl;
+					string Die = "yes";
+					string DieAnswer;
+					cout << " Want to restart the game? " << endl;
+					cin >> DieAnswer;
+					if (DieAnswer == Die)
+						continue;
+ 
+					else
+					{
+						cout << " whatever, goodbye !" << endl;
+						break;
+					}
+ 
+ 
+				}
+				
+				cin.get();
+				cin.get();
+				
+				string GameRestart = "yes";
+				string RestartAnswer;
+				cout << " Congratulations again , you won this." << endl;
+ 
+				cin.get();
+				
+				cout << " Want to restart the game?" << endl;
+				cin >> RestartAnswer;
+				if (RestartAnswer == GameRestart)
+					continue;
+ 
+				else
+				{
+					cout << " Allright then, goodbye! Thanks for playing. " << endl;
+					break;
+				}
+		cin.get();
+		cin.get();
+ 
+		return 0;
+	}
+	cout << " Press Any Key to quit ;)" << endl;
+	cin.get();
+	cin.get();
+	return 0;
